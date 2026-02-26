@@ -5,7 +5,7 @@
 <title>Raftar Bhai Casino – 40% Sharing Software</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Meta Pixel Code -->
+<!-- Meta Pixel Code (UNCHANGED) -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -18,16 +18,11 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 fbq('init', '935963645631205');
 fbq('track', 'PageView');
 </script>
-<noscript>
-<img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=935963645631205&ev=PageView&noscript=1"/>
-</noscript>
-<!-- End Meta Pixel Code -->
 
 <style>
 body{
     margin:0;
-    font-family:Arial,Helvetica,sans-serif;
+    font-family:Arial;
     background:radial-gradient(circle at top,#0b2b3a,#030b12);
     color:#fff;
     display:flex;
@@ -38,124 +33,82 @@ body{
 
 .main{
     width:94%;
-    max-width:440px;
-    background:linear-gradient(180deg,#071a24,#040c13);
-    border-radius:22px;
-    padding:22px;
-    box-shadow:0 0 35px rgba(0,255,180,.25);
+    max-width:420px;
+    background:#061720;
+    border-radius:20px;
+    padding:20px;
     text-align:center;
-    border:1px solid rgba(0,255,180,.2);
 }
 
 .logo{
-    width:110px;
-    height:110px;
+    width:100px;
+    height:100px;
     margin:auto;
     border-radius:50%;
-    border:4px solid #00ffb2;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    box-shadow:0 0 20px rgba(0,255,180,.6);
+    border:3px solid #00ffb2;
     overflow:hidden;
-    background:#061720;
-    font-size:40px;
 }
 
 h1{
-    margin:14px 0 4px;
-    font-size:26px;
     color:#00ffb2;
-}
-
-.tag{
-    font-size:14px;
-    color:#cfdfe6;
-    margin-bottom:14px;
+    margin:10px 0;
 }
 
 .hero{
-    background:linear-gradient(135deg,#072838,#0b3d52);
-    border-radius:16px;
-    padding:14px;
-    margin-bottom:16px;
-    color:#ffe66d;
-    font-size:15px;
-    line-height:1.6;
-}
-
-.badges{
-    display:flex;
-    justify-content:space-between;
-    gap:8px;
-    margin-bottom:16px;
-}
-
-.badge{
-    flex:1;
-    background:#061720;
+    background:#082733;
+    padding:12px;
     border-radius:12px;
-    padding:10px 6px;
-    font-size:13px;
-    border:1px solid rgba(0,255,180,.2);
-}
-
-.badge span{
-    display:block;
-    font-size:18px;
-    color:#00ffb2;
-    font-weight:bold;
-    margin-bottom:4px;
+    margin:10px 0;
 }
 
 .cta{
     display:block;
-    text-decoration:none;
-    padding:16px;
-    border-radius:14px;
-    background:linear-gradient(90deg,#00ffb2,#00b4ff);
+    margin-top:15px;
+    padding:15px;
+    background:#00ffb2;
     color:#000;
     font-weight:bold;
-    font-size:20px;
-    margin-bottom:12px;
-    animation:blink 1s infinite;
-}
-
-.secondary{
-    display:block;
+    border-radius:10px;
     text-decoration:none;
-    padding:14px;
-    border-radius:14px;
-    background:linear-gradient(90deg,#ffb703,#ff5f1f);
-    color:#000;
-    font-weight:bold;
-    font-size:17px;
-}
-
-@keyframes blink{
-    0%{opacity:1;}
-    50%{opacity:.65;}
-    100%{opacity:1;}
-}
-
-.features{
-    margin-top:16px;
-    text-align:left;
-    font-size:14px;
-    line-height:1.7;
-    color:#d7e7ee;
-}
-
-.features b{
-    color:#00ffb2;
-}
-
-.note{
-    margin-top:12px;
-    font-size:12px;
-    color:#a9b8c2;
+    font-size:18px;
+    opacity:.5;
+    pointer-events:none;
 }
 </style>
+
+<!-- 🔥 ANTI-FAKE CLICK LOGIC -->
+<script>
+let clicked = false;
+let allowClick = false;
+
+// enable button after 3 sec (real user filter)
+setTimeout(()=>{
+    allowClick = true;
+    document.querySelector('.cta').style.opacity = "1";
+    document.querySelector('.cta').style.pointerEvents = "auto";
+},3000);
+
+// scroll tracking (serious user)
+window.addEventListener('scroll', function() {
+    if (window.scrollY > 100) {
+        fbq('track', 'ViewContent');
+    }
+});
+
+function handleClick(){
+    if(!allowClick) return;
+    if(clicked) return;
+
+    clicked = true;
+
+    fbq('track', 'Lead');
+
+    setTimeout(()=>{
+        window.open('https://t.me/+7McRoT1qRqk2MGRl','_blank');
+    },500);
+}
+</script>
+
 </head>
 
 <body>
@@ -163,54 +116,21 @@ h1{
 <div class="main">
 
   <div class="logo">
-    <img src="logo.png" alt="Raftar Bhai Casino Logo" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
+    <img src="logo.png" style="width:100%;height:100%;">
   </div>
 
   <h1>Raftar Bhai Casino</h1>
-  <div class="tag">Specialist in 40% Sharing Software Work</div>
 
   <div class="hero">
-      🔥 Exclusive Casino Work Script<br>
-      💸 40% Sharing Profit Model<br>
-      🚀 100% Secure & Tested Strategy
+    🔥 Exclusive Casino Work Script <br>
+    💸 40% Sharing Model <br>
+    🚀 Live Working System
   </div>
 
-  <div class="badges">
-      <div class="badge">
-          <span>40%</span>
-          Sharing
-      </div>
-      <div class="badge">
-          <span>LIVE</span>
-          Script Work
-      </div>
-      <div class="badge">
-          <span>FAST</span>
-          Withdrawal
-      </div>
-  </div>
-
-  <a class="cta" href="https://t.me/+7McRoT1qRqk2MGRl" target="_blank"
-     onclick="fbq('track', 'Lead');">
-      📲 JOIN TELEGRAM RAFTAR
+  <!-- 🔥 SINGLE CTA ONLY -->
+  <a class="cta" href="#" onclick="handleClick()">
+    📲 JOIN TELEGRAM
   </a>
-
-  <a class="secondary" href="https://t.me/+7McRoT1qRqk2MGRl" target="_blank"
-     onclick="fbq('track', 'Lead');">
-      💬 JOIN NOW FOR SCRIPT
-  </a>
-
-  <div class="features">
-      ✅ <b>Advanced Software Work</b><br>
-      ✅ <b>Daily 40% Profit Sharing</b><br>
-      ✅ <b>Win Guarantee Script</b><br>
-      ✅ <b>Full Support & Guidance</b><br>
-      ⚠️ No Advance – Kaam Ke Baad Hisab
-  </div>
-
-  <div class="note">
-      *Terms and conditions apply. Work at your own risk.
-  </div>
 
 </div>
 
